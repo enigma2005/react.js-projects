@@ -19,28 +19,25 @@ function App() {
         }));
     };
 
-    return ( <
-        div className = "App" >
-        <
-        h3 > Click to get the Upcoming launches
-        for spaceX < /h3><button onClick={fetchData}>Upcoming launches</button >
-        <
-        ul > {
+    return (         
+        <div className = "App">
+        <h3> Click to get the Upcoming launches for spaceX </h3>
+        <button onClick={fetchData}>Upcoming launches</button >
+        <ul> {
             launches.map((launch) =>
-                <
-                ul >
-                <
-                li > Project number: { launch.number } < /li> <
-                li > Project Name: { launch.name } < /li> <
-                li > Date: { launch.date } < /li> <
-                li > Time: { launch.time } < /li> <
-                li > Details: { launch.details } < /li> <
-                li > -- -- -- -- -- -- -- < /li> <
+                <ul>
+                
+                <li> Project number: { launch.number } </li> 
+                <li> Project Name: { launch.name } </li> 
+                <li> Date: { launch.date } </li> 
+                <li> Time: { launch.time } </li> 
+                <li> Details: { launch.details } </li> 
+                <li> -- -- -- -- -- -- -- </li> 
                 /ul>
             )
-        } <
-        /ul> <
-        /div>
+        } 
+        </ul> 
+        </div>
     );
 }
 
