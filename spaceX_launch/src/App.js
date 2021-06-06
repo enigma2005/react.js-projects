@@ -33,7 +33,7 @@ function App() {
                 <li> Time: { launch.time } </li> 
                 <li> Details: { launch.details } </li> 
                 <li> -- -- -- -- -- -- -- </li> 
-                /ul>
+                </ul>
             )
         } 
         </ul> 
